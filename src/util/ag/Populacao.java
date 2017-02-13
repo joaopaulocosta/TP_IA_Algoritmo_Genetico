@@ -27,10 +27,11 @@ public class Populacao {
 	/*Método que imprimi as geraçoes no seguinte padrao: 
 	* "Individuo Cromossomos(valorBinario) valorDecimal valorEmf(x) */
 	public void imprimirPopulacao(){
+		System.out.println("Ind. Cromossomos Decimal f(x)");
 		for(int i = 0; i < tam; i++){
 			int dec = lista[i].getDecimal();
-			System.out.println((i+1) + " " + lista[i].getCromo() + " "
-					+ dec + " " + f(dec));
+			System.out.println((i+1) + "      " + lista[i].getCromo() + "     "
+					+ dec + "       " + f(dec));
 		}
 		System.out.println();
 	}
