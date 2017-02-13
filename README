@@ -1,0 +1,24 @@
+Trabalho Pratico de Inteligência Artificial
+Desenvolvimento de um Algoritmo Genético
+
+Autor: Joao Paulo Costa
+Autor: Renato Alvarenga	 
+
+OBSERVAÇOES: 
+
+
+	1 - O projeto foi desenvolvido na linguagem java e para executalo bastar abrir o terminal
+		e na pasta do projeto digitar o seguinte comando:
+	
+			java -jar algGenetico.jar
+	
+	2 - Por padrao os valores referentes a quantidade de individuos e ao numero de geraçao sao
+		10 e 200 respectivamente, mas podem ser alterados enviando dois valores como parâmetro na
+		chamada de funçao como abaixo:
+		
+			java -jar algGenetico.jar 6 10
+			
+		onde sera executado o algoritmo para 6 individuos em 10 geraçoes.
+		
+	3 - No enunciado tinhamos que limitar o valor de x entre 10 e -10 porém tivemos alguns problemas com a
+ 		representatividade em binarios, logo limitamos entre 15 e -15

@@ -4,25 +4,36 @@ package util.ag;
  *	Desenvolvimento de um Algoritmo Genético
  *	
  *	Autor: Joao Paulo Costa
- *	Autor: Renato Alvarenga	 
- *
- *		
- *
- *	OBs: No enunciado tinhamos que limitar o valor de x entre 10 e -10 porém tivemos alguns problemas com a
- *	representatividade em binarios, logo limitamos entre 15 e -15*/
+ *	Autor: Renato Alvarenga	 */
 
 public class Main {
 	
-	public static final int NUM_GERACOES = 200;	//numero de geraçoes
-	public static final int NUM_INDIVIDUOS = 20;	//numero de individuos
+	public static int numGeracoes = 200;	//numero de geraçoes
+	public static int numIndividuos = 10;	//numero de individuos
 	
 	public static void main(String [] args){
-		Populacao pop = new Populacao(NUM_INDIVIDUOS);
+		
+		
+		if(args.length == 2){
+			try{
+				numIndividuos  = Integer.parseInt(args[0]);
+				numGeracoes  = Integer.parseInt(args[1]);
+			}catch(Exception e){
+				System.out.println("Os argumentos devem ser do tipo inteiro!");
+				return;
+			}
+		}else if( args.length != 2 && args.length != 0){
+			System.out.println("Sao necessarios dois argumentos de entrada.");
+			return;
+		}
+
+		
+		Populacao pop = new Populacao(numIndividuos);
 		int contGeracoes = 1;
 		System.out.println("Geraçao: " + contGeracoes++);
 		pop.imprimirPopulacao();
 		
-		for(int i = 1; i < NUM_GERACOES; i++){
+		for(int i = 1; i < numGeracoes; i++){
 			pop.novaGeracao();
 			System.out.println("Geraçao: " + contGeracoes++);
 			pop.imprimirPopulacao();

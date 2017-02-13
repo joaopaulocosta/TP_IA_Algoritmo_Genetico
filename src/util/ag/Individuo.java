@@ -1,6 +1,12 @@
 package util.ag;
 import java.util.Random;
 
+/*	Trabalho Pratico de Inteligência Artificial
+ *	Desenvolvimento de um Algoritmo Genético
+ *	
+ *	Autor: Joao Paulo Costa
+ *	Autor: Renato Alvarenga */
+
 public class Individuo {
 	public static final int CROMO = 5;	//quantidade de cromossomos dos individuos (proporcional ao limitante)
 	private static final int LIM = 15;	//limitande do x da funcao usada

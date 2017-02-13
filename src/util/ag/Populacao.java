@@ -1,6 +1,13 @@
 package util.ag;
 import java.util.Random;
 
+/*	Trabalho Pratico de Inteligência Artificial
+ *	Desenvolvimento de um Algoritmo Genético
+ *	
+ *	Autor: Joao Paulo Costa
+ *	Autor: Renato Alvarenga */
+
+
 public class Populacao {
 	
 	private static final int PERC_MUTACAO = 1;		//taxa de mutaçao em %
